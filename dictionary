@@ -1,0 +1,7 @@
+list = input("Enter text for dictionary: ")
+splitWord = list.split()
+splitWord.sort()
+for word in splitWord:
+    if word == word:
+        
+        print(str(word))
