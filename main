@@ -1,0 +1,9 @@
+a = input("Enter action(1-len words; 2-dictionary; 3-reapeted words): ")
+if a == "1":
+    import lenwords
+elif a == "2":
+    import slownyk
+elif a == "3":
+    import reapetedwords
+else:
+    print("Unknown function")
