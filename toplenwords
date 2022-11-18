@@ -1,0 +1,12 @@
+def largestWord(s):
+
+    s = sorted(s, key = len)
+ 
+    print(s[-5:])
+
+
+s = input("Enter text for top 5 len words: ")
+ 
+l = list(s.split(" "))
+ 
+largestWord(l)
