@@ -1,7 +1,14 @@
 list = input("Enter text for dictionary: ")
-splitWord = list.split()
-splitWord.sort()
-for word in splitWord:
-    if word == word:
-        
-        print(str(word))
+edited_list = []
+output = ""
+for a in list.split():
+    a = a.rstrip(",")
+    a = a.rstrip(".")
+    a = a.lower ()
+    if len(a) > 3:
+        edited_list.append(a)
+edited_list = sorted(set(edited_list))
+
+for a in edited_list:
+    output += a + "\n"
+print(output)
